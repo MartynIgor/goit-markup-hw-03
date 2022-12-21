@@ -1,58 +1,48 @@
 body {
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto', 'Sans-serif';
+    background-color: var(--white);
 }
 
 .header-logo,
 .footer-logo {
-    display: flex;
     text-decoration: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    /* identical to box height, or 133% */
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 .header-text-web,
 .footer-text-web {
-    color: #4D5AE5;
-    display: flex;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 24px;
-    /* identical to box height, or 133% */
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    /* IRIS */
-    color: #4D5AE5;
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    color: var(--blue);
 }
 
 .header-menu {
     /* NAVY BLUE */
-    color: #2E2F42;
+    color: var(--dark);
     /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 1.5em;
+    line-height: 1.5;
+}
+
+.header-menu:hover,
+.header-menu:focus {
+    color: var(--darkblue-hover);
 }
 
 .header-text-studio {
-    color: #2E2F42;
+    color: var(--dark);
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.33;
     /* identical to box height, or 133% */
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     width: 71px;
@@ -65,10 +55,8 @@ body {
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 1.17;
     /* identical to box height */
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     width: 71px;
@@ -81,14 +69,19 @@ body {
     color: #434455;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.5em;
+    line-height: 1.5;
+}
+
+.contacts:hover,
+.contacts:focus {
+    color: var(--darkblue-hover);
 }
 
 .footer-text {
     /* Body */
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.5em;
+    line-height: 1.5;
     /* or 150% */
     letter-spacing: 0.02em;
     /* CORNFLOWER */
@@ -96,22 +89,22 @@ body {
 }
 
 .footer {
-    background: #2E2F42;
+    background: var(--dark);
 }
 
 .title {
     /* Header 1 */
-    font-weight: 600;
+    font-weight: 700;
     font-size: 56px;
-    line-height: 1.07em;
+    line-height: 1.07;
     /* or 107% */
     text-align: center;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .title-background {
-    background: #2E2F42;
+    background: var(--dark);
 }
 
 .our-team {
@@ -119,94 +112,66 @@ body {
 }
 
 .button-order {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 1.2em;
-    /* identical to box height */
-    display: flex;
-    align-items: center;
+    line-height: 1.2;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
+    color: var(--white);
     /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 16px 32px;
     gap: 10px;
     /* IRIS */
-    background: #4D5AE5;
+    background: var(--blue);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
 
-.section {
+.button-order:hover {
+    background: var(--darkblue-hover);
+}
+
+.topic-text {
     /* Header 2 */
-    font-weight: 600;
+    font-weight: 700;
     font-size: 36px;
-    line-height: 1.1em;
+    line-height: 1.11;
     /* identical to box height, or 111% */
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2E2F42;
+    color: var(--dark);
 }
 
-h3 {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.2em;
-    /* identical to box height, or 120% */
-    letter-spacing: 0.02em;
-    /* NAVY BLUE */
-    color: #2E2F42;
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-p {
+.article {
     /* Body */
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.5em;
+    line-height: 1.5;
     /* or 150% */
     letter-spacing: 0.02em;
     /* SLATE */
     color: #434455;
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 }
 
 .button-filter {
-    /* CLOUD */
+    cursor: pointer;
     background: var(--border-color);
     /* CORNFLOWER */
     border: 1px solid #E7E9FC;
     border-radius: 4px;
     /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
     /* IRIS */
-    color: #4D5AE5;
+    color: var(--blue);
     /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 1.5em;
+    line-height: 1.5;
 }
 
-.button-filter:hover {
-    background: #4D5AE5;
-    color: #FFFFFF;
+.button-filter:hover,
+.button-filter:active {
+    background: var(--blue);
+    color: var(--white);
 }
 
 .pic-shadow:hover {
@@ -224,7 +189,7 @@ p {
     background-blend-mode: soft-light;
     mix-blend-mode: normal;
     letter-spacing: 0.02em;
-    color: #4D5AE5;
+    color: var(--blue);
 }
 
 li {
@@ -238,7 +203,7 @@ ul {
 }
 
 .block-under-photo {
-    background: #FFFFFF;
+    background: var(--white);
     /* CLOUD */
     border: 0.5px solid var(--border-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -246,4 +211,29 @@ ul {
 
 :root {
     --border-color: #F4F4FD;
+    --dark: #2E2F42;
+    --blue: #4D5AE5;
+    --white: #FFFFFF;
+    --darkblue-hover: #404BBF;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.images-block {
+    background-color: var(--white);
 }
