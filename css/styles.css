@@ -1,19 +1,39 @@
+:root {
+    --border-color: #F4F4FD;
+    --dark: #2E2F42;
+    --blue: #4D5AE5;
+    --white: #FFFFFF;
+    --darkblue-hover: #404BBF;
+    --grey: #434455;
+}
+
 body {
-    font-family: 'Roboto', 'Sans-serif';
+    font-family: 'Roboto', Sans-serif;
     background-color: var(--white);
 }
 
-.header-logo,
-.footer-logo {
+.header-logo {
     text-decoration: none;
-    font-family: 'Raleway';
+    font-family: 'Raleway', Sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
-    /* identical to box height, or 133% */
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    color: var(--dark);
+}
+
+.footer-logo {
+    text-decoration: none;
+    font-family: 'Raleway', Sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--border-color);
 }
 
 .header-text-web,
@@ -24,7 +44,7 @@ body {
 .header-menu {
     /* NAVY BLUE */
     color: var(--dark);
-    /* Inside auto layout */
+    letter-spacing: 0.02em;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -37,7 +57,7 @@ body {
 
 .header-text-studio {
     color: var(--dark);
-    font-family: 'Raleway';
+    font-family: 'Raleway', Sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -49,24 +69,10 @@ body {
     height: 24px;
 }
 
-.footer-text-studio {
-    color: var(--border-color);
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    /* identical to box height */
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    width: 71px;
-    height: 24px;
-}
-
 .contacts {
     letter-spacing: 0.02em;
     /* SLATE */
-    color: #434455;
+    color: var(--grey);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -125,18 +131,29 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
+    font-family: 'Roboto', Sans-serif;
 }
 
 .button-order:hover {
     background: var(--darkblue-hover);
 }
 
-.topic-text {
-    /* Header 2 */
+.section-text {
+    font-family: 'Roboto', Sans-serif;
+    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-    /* identical to box height, or 111% */
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.topic-text {
+    font-family: 'Roboto', Sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
@@ -144,34 +161,32 @@ body {
 }
 
 .article {
-    /* Body */
+    font-family: 'Roboto', Sans-serif;
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    /* or 150% */
+    line-height: 24px;
     letter-spacing: 0.02em;
-    /* SLATE */
-    color: #434455;
+    color: var(--grey);
+    text-align: center;
 }
 
 .button-filter {
     cursor: pointer;
     background: var(--border-color);
-    /* CORNFLOWER */
     border: 1px solid #E7E9FC;
     border-radius: 4px;
-    /* Inside auto layout */
-    /* IRIS */
     color: var(--blue);
-    /* Inside auto layout */
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    font-family: 'Roboto', 'Sans-serif';
+    font-family: 'Roboto', Sans-serif;
 }
 
 .button-filter:hover,
-.button-filter:active {
+.button-filter:active,
+.button-filter:focus {
     background: var(--blue);
     color: var(--white);
 }
@@ -209,14 +224,6 @@ ul {
     /* CLOUD */
     border: 0.5px solid var(--border-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-
-:root {
-    --border-color: #F4F4FD;
-    --dark: #2E2F42;
-    --blue: #4D5AE5;
-    --white: #FFFFFF;
-    --darkblue-hover: #404BBF;
 }
 
 .visually-hidden {
