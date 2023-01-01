@@ -13,93 +13,107 @@
 </head>
 
 
-<header>
-    <a class="header-logo" href="index.html">
-        <span class="header-text-web">WEB</span>STUDIO
-    </a>
-    <nav class="nav">
-        <ul>
-            <li><a class="header-menu" href="index.html">Studio</a></li>
-            <li><a class="header-menu" href="portfolio.html">Portfolio</a></li>
-            <li><a class="header-menu" href="/">Contacts</a></li>
-        </ul>
-    </nav>
-    <ul>
-        <li><a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="contacts" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-    </ul>
+<header class="header">
+    <div class="container">
+        <div class="header-wrap">
+            <a class="header-logo" href="index.html">
+                <span class="header-text-web">WEB</span>STUDIO
+            </a>
+            <nav class="header-main-block">
+                <ul class="menu-list">
+                    <li class="header-menu"><a href="index.html">Studio</a></li>
+                    <li class="header-menu"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="header-menu"><a href="/">Contacts</a></li>
+                </ul>
+            </nav>
+            <ul class="contacts-list">
+                <li><a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a class="contacts" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+            </ul>
+        </div>
+    </div>
 </header>
 <main>
-    <section class="title-background">
-        <h1 class="title">Effective Solutions for Your Business</h1>
 
-        <button class="button-order" type="button">Order Service</button>
+    <section class="hero-background">
+        <div class="container">
+            <h1 class="title">Effective Solutions for Your Business</h1>
+            <div class="button-div">
+                <button class="button-order" type="button">Order Service</button>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2 class="visually-hidden">Skills</h2>
 
-        <ul>
-            <li>
-                <h3 class="topic-text">Strategy</h3>
-                <p class="article">
-                    Our goal is to identify the business problem to walk away with the perfect and creative solution.
-                </p>
-            </li>
-            <li>
-                <h3 class="topic-text">Punctuality</h3>
-                <p class="article">
-                    Bring the key message to the brand's audience for the best price within the shortest possible time.
-                </p>
-            </li>
-            <li>
-                <h3 class="topic-text">Diligence</h3>
-                <p class="article">
-                    Research and confirm brands that present the strongest digital growth opportunities and minimize risk.
-                </p>
-            </li>
-            <li>
-                <h3 class="topic-text">Technologies</h3>
-                <p class="article">
-                    Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
-                </p>
-            </li>
+    <section class="section">
+        <div class="container section">
+            <h2 class="visually-hidden">Skills</h2>
+            <ul class="container-achivments">
+                <li class="container-item">
+                    <h3 class="container-title">Strategy</h3>
+                    <p class="container-text">
+                        Our goal is to identify the business problem to walk away with the perfect and creative solution.
+                    </p>
+                </li>
+                <li class="container-item">
+                    <h3 class="container-title">Punctuality</h3>
+                    <p class="container-text">
+                        Bring the key message to the brand's audience for the best price within the shortest possible time.
+                    </p>
+                </li>
+                <li class="container-item">
+                    <h3 class="container-title">Diligence</h3>
+                    <p class="container-text">
+                        Research and confirm brands that present the strongest digital growth opportunities and minimize risk.
+                    </p>
+                </li>
+                <li class="container-item">
+                    <h3 class="container-title">Technologies</h3>
+                    <p class="container-text">
+                        Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
+                    </p>
+                </li>
+        </div>
         </ul>
-    </section>
 
 
 
-    <section>
+
+
         <h2 class="section-text">What are we doing</h2>
-        <ul>
-            <li><img class="photo-one" src="./images/img_1.jpg" alt="grafic" width="360" height="300" /></li>
-            <li><img class="photo-two" src="./images/img_2.jpg" alt="mobile app" width="360" height="300" /></li>
-            <li><img class="photo-three" src="./images/img_3.jpg" alt="application open at phone" width="360" height="300" /></li>
+        <ul class="photos">
+            <li class="photo"><img src="./images/img_1.jpg" alt="grafic" width="360" height="300" /></li>
+            <li class="photo"><img src="./images/img_2.jpg" alt="mobile app" width="360" height="300" /></li>
+            <li class="photo"><img src="./images/img_3.jpg" alt="application open at phone" width="360" height="300" /></li>
         </ul>
 
     </section>
+
 
     <section class="our-team">
-        <h2 class="section-text">Our Team</h2>
-        <ul>
-            <li class="images-block"> <img src="./images/mark_guerrero.jpg" alt="Mark Guerrero" width="264" height="260" />
-                <h3 class="topic-text">Mark Guerrero</h3>
-                <p class="article">Product Designer</p>
-            </li>
-            <li class="images-block"> <img src="./images/tom_ford.jpg" alt="Tom Ford" width="264" height="260" />
-                <h3 class="topic-text">Tom Ford</h3>
-                <p class="article">Frontend Developer</p>
-            </li>
-            <li class="images-block"> <img src="./images/camila_garcia.jpg" alt="Camila Garcia" width="264" height="260" />
-                <h3 class="topic-text">Camila Garcia</h3>
-                <p class="article">Marketing</p>
-            </li>
-            <li class="images-block"> <img src="./images/daniel_wilson.jpg" alt="Daniel Wilson" width="264" height="260" />
-                <h3 class="topic-text">Daniel Wilson</h3>
-                <p class="article">UI Designer</p>
-            </li>
-        </ul>
+        <div class="container">
+            <h2 class="section-text">Our Team</h2>
+            <ul class="workers-list">
+                <li class="images-block"> <img src="./images/mark_guerrero.jpg" alt="Mark Guerrero" width="264" height="260" />
+                    <h3 class="topic-text">Mark Guerrero</h3>
+                    <p class="article">Product Designer</p>
+                </li>
+                <li class="images-block"> <img src="./images/tom_ford.jpg" alt="Tom Ford" width="264" height="260" />
+                    <h3 class="topic-text">Tom Ford</h3>
+                    <p class="article">Frontend Developer</p>
+                </li>
+                <li class="images-block"> <img src="./images/camila_garcia.jpg" alt="Camila Garcia" width="264" height="260" />
+                    <h3 class="topic-text">Camila Garcia</h3>
+                    <p class="article">Marketing</p>
+                </li>
+                <li class="images-block"> <img src="./images/daniel_wilson.jpg" alt="Daniel Wilson" width="264" height="260" />
+                    <h3 class="topic-text">Daniel Wilson</h3>
+                    <p class="article">UI Designer</p>
+                </li>
+            </ul>
+        </div>
     </section>
+
 </main>
 <footer class="footer">
     <a class="footer-logo" href="index.html">
